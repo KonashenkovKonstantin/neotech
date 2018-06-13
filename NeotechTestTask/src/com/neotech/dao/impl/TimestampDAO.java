@@ -37,9 +37,6 @@ public class TimestampDAO implements ITimestampDAO {
 			if (prep != null) {prep.close();}
 			if (resultSet != null) {resultSet.close();}
 		}
-
-		
-		
 	}
 
 	@Override
@@ -57,9 +54,8 @@ public class TimestampDAO implements ITimestampDAO {
 			while (rs.next()) {
 				result.add(new TimestampBean(rs.getLong("id"), rs.getTimestamp("timeInfo")));				
 			}
-			return result;			
-		} catch (SQLException se) {
-			throw se;
+			return result;
+			
 		} finally {
 			if (con != null) {con.close();}
 			if (prep != null) {prep.close();}

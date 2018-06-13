@@ -40,20 +40,16 @@ public class ParseConfigHelper {
 				addNewConfig(map, line);
 			}
 			return map;			
-		} catch (Exception e) {
-			logger.error("Error occured during parsing '" + pathToConfig + "' conf file");
-			throw e;
-		} 
+		}
 	}
 	
 	public static void addNewConfig(Map<String,String> map, String line) {
-		//TODO: maybe refactoring ??
-		
-		//TODO: tests 
+		//1. empty line
 		if (line == null || line.length() == 0) {
 			return;
 		}
 		
+		//2. no value or / and config
 		String[] configs = line.split(CONFIG_VALUE_DELIMITER);
 		if (configs.length != 2) {
 			return;
@@ -62,6 +58,7 @@ public class ParseConfigHelper {
 		String config = configs[0].trim();
 		String value = configs[1].trim();
 		
+		//3. empty value or/and config
 		if (config.length() == 0 || value.length() == 0) {
 			return;
 		}

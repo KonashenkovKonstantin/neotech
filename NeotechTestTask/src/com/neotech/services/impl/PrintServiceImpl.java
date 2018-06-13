@@ -34,7 +34,7 @@ public class PrintServiceImpl implements IPrintService {
 
 	@Override
 	public void printAboutError(Exception ee) {
-		System.out.println("Error: ");
+		System.out.println(dateFormat.format(new Date()) + ". Error: ");
 		ee.printStackTrace();
 		
 	}
