@@ -6,7 +6,7 @@ Implementation of a test task for Neotech
 - Maven 3  
 
 ## How to configure
-This solutions works with MySQL database. All configurations are located in '\neotech\NeotechTestTask\db.properties' file.
+This solutions works with MySQL database. All configurations are located in '/neotech/NeotechTestTask/db.properties' file.
 To change db name / user / password just edit this file and build the project
 
 ## How to build solution
@@ -19,5 +19,5 @@ The target folder contains two jars: Neotech-0.0.1.jar (without libraries) and N
 You can do with command line  
 - build solution  
 - run application, you have two options:  
--- without 'p' parameter: java -jar target\Neotech-0.0.1-jar-with-dependencies.jar  
--- with 'p' parameter: java -jar target\Neotech-0.0.1-jar-with-dependencies.jar -p  
+- - without 'p' parameter: java -jar target\Neotech-0.0.1-jar-with-dependencies.jar  
+- - with 'p' parameter: java -jar target\Neotech-0.0.1-jar-with-dependencies.jar -p  
