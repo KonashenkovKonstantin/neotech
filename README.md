@@ -1,4 +1,4 @@
-## neotech
+## Neotech
 Implementation of a test task for Neotech  
 
 ## Requirements
