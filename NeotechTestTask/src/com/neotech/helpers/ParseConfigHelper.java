@@ -19,7 +19,7 @@ public class ParseConfigHelper {
 	private static final String DB_CONFIG_USER = "dbUser";
 	private static final String DB_CONFIG_PASSWORD = "dbPassword";
 	
-	private static final String PATH_TO_DB_CONFIG = "./conf/db.config";
+	private static final String PATH_TO_DB_CONFIG = "./db.properties";
 	
 	public static DBConfigBean parseDBConfig() throws Exception {
 		DBConfigBean dbConfigBean = new DBConfigBean();
