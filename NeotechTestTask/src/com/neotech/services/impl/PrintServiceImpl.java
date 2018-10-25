@@ -11,7 +11,7 @@ import com.neotech.services.IPrintService;
 public class PrintServiceImpl implements IPrintService {
 	
 	private static final DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");
-	private static final String TIMESTAMP_COMMOM_INFO = "There are %d records in database\n";
+	private static final String TIMESTAMP_COMMON_INFO = "There are %d records in database\n";
 	private static final String TIMESTAMP_EACH_RECORD = "id: %d, timestamp: %s\n";
 
 	@Override
@@ -20,7 +20,7 @@ public class PrintServiceImpl implements IPrintService {
 			return;
 		}
 		
-		System.out.printf(TIMESTAMP_COMMOM_INFO, timestampList.size());
+		System.out.printf(TIMESTAMP_COMMON_INFO, timestampList.size());
 		for (TimestampBean baseRecord : timestampList) {
 			System.out.printf(TIMESTAMP_EACH_RECORD, baseRecord.getId(), baseRecord.getTimestamp());
 		}
