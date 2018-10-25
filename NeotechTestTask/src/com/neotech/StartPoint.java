@@ -19,7 +19,7 @@ public class StartPoint {
 	
 	public static void main(String args[]) {
 		
-		logger.info("Programm started");
+		logger.info("Program started");
 		if (isPrintTimestampMode(args)) {
 			logger.info("'Print all timestamps' mode");	
 			printAllTimestamps();
@@ -27,7 +27,7 @@ public class StartPoint {
 			logger.info("'Send timestamps to DB' mode");
 			startSendTimestampsInDB();
 		}
-		logger.info("Programm finished");
+		logger.info("Program finished");
 	}
 	
 	private static void startSendTimestampsInDB() {
